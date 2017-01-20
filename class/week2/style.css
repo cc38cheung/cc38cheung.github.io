@@ -5,35 +5,25 @@
   margin-top: 10px;
   border: 1px black solid;
   }
-  .secondHeader{
-    height: 100px;
-       min-height: 100px;
-       max-height: 100px;
-      margin-top: 10px;
-    border: 1px black solid;
-  }
   .one{
-    height:50px;
-    min-height:50px;
-    max-height: 50px;
+    height:400px;
+    min-height:400px;
+    max-height: 400px;
     margin-top:10px;
     border: 1px black solid;
-    margin-left: 60px;
   }
   .two{
-    height:50px;
-    min-height:50px;
-    max-height: 50px;
+    height:400px;
+    min-height:400px;
+    max-height: 400px;
     margin-top:10px;
     border: 1px black solid;
-    margin-left: 60px;
-    margin-right: 60px;
+
   }
   .three{
-    height:50px;
-    min-height:50px;
-    max-height: 50px;
+    height:400px;
+    min-height:400px;
+    max-height: 400px;
     margin-top:10px;
     border: 1px black solid;
-    margin-right: 50px;
   }
