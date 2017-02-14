@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 6 Presentation</title>
+    <title>Week 6</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,12 +16,122 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style media="screen">
+.alignOne{
+  height:100px;
+  max-height:100px;
+  min-height:100px;
+}
+.textAlignCenter{
+  height:50px;
+  max-height: 50px;
+  min-height: 50px;
+  }
+.body{
+  height:200px;
+  max-height:200px;
+  min-height:200px;
+  text-align: center;
+margin: 0 auto;
+     display: block;
+line-height:100px; /* for single lines of text mostly*/
+font-size: 50px;
+}
+.bottomOne{
+  height:150px;
+  max-height:150px;
+  min-height:150px;
+  margin-top:0.5%;
+  margin-left: 5%;
+}
+.bottomTwo{
+  height:150px;
+  max-height:150px;
+  min-height:150px;
+}
+.bottomThree{
+  height:150px;
+  max-height:150px;
+  min-height:150px;
+  display: flex; /*all inside container will be flexed*/
+  align-items: center; /*vertical*/
+  justify-content: center;/*horizontal*/
+  flex-flow: column; /*default row*/
+
+}
+.pic2{
+  margin-top: 5%;
+  margin-left: 18%;
+}
+.relativeParent{
+  position:relative;
+}
+.relativeChild{
+  position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);  /*redraw the image*/
+
+}
+  </style>
   </head>
   <body>
+    <div id="main" class="container-fluid">
+        <div class="row"></div>
+            <div class="col-md-3 randomColor alignOne"></div>
+              <div class="col-md-6 randomColor textAlignCenter"></div>
+              <div class="col-md-1 randomColor textAlignCenter"></div>
+              <div class="col-md-1 randomColor textAlignCenter"></div>
+              <div class="col-md-1 randomColor textAlignCenter"></div>
+              <div class="row"></div>
+          <div class="col-md-12 randomColor body">
+            出ス速筋ぎっつ首憲ヨヌタス価対サセスオ建育まフ受前ウロコイ目。</div>
 
+          <div class="row"></div>
+      <div class="col-md-4 randomColor bottomOne">
+        <img src="jpn2.jpg" height="150px" width="150px" class="pic2" />
+        左ちぼすへ掘税続助車校におわ待調ヨレツソ陸書せ各人。
+</div>
+      <div class="col-md-4 randomColor bottomOne">
+        <img src="jpn3.jpg" height="150px" width="150px" class="pic2" />
+        今道ヨ更指段ノル提術本聞養歯没フにり。
+</div>
+      <div class="col-md-4 randomColor bottomOne">
+        <img src="jpn1.jpg" height="150px" width="150px" class="pic2"/>5手づ井略瀬ル大動の画9人イツ岩9部レワオ。</div>
+
+      <div class="row"></div>
+  <div class="col-md-4 randomColor bottomTwo" alt="relativeParent">宝コウヘル率士じ今地ワリ善4高かわ。</div>
+  <div class="col-md-4 randomColor bottomTwo" alt="relativeParent">
+    <img src="jpn3.jpg" width="150px" height="150px" alt="relativeChild" />
+    請文そきんぐ年株易奉をせふう。</div>
+  <div class="col-md-4 randomColor bottomTwo" alt="relativeParent">
+      <div>
+      医綺けえよル史6惑ぎれどス古詳担奈雑みとイこ。
+  <img src="jpn1.jpg" width="150px" height="150px" alt="relativeChild" /></div></div>
+
+  <div class="row"></div>
+<div class="col-md-4 randomColor bottomThree">
+  <img src="jpn1.jpg" height="150px" width="150px"/></div>
+<div class="col-md-4 randomColor bottomThree">
+  <img src="jpn2.jpg" height="150px" width="150px"/></div>
+<div class="col-md-4 randomColor bottomThree">
+    <img src="jpn3.jpg" height="150px" width="150px"/></div>
+            </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+function getRandomNumber(min, max) {           
+return Math.floor(Math.random() * max + min);       
+        }
+$(document).ready(function() {
+var bodyColumns = $(".randomColor");
+bodyColumns.each(function() {
+$(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+})
+ $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+})
+    </script>
   </body>
 </html>
