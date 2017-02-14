@@ -17,14 +17,111 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style media="screen">
-
+.nav{
+  height: 50px;
+  max-height:50px;
+  min-height:50px;
+  font-size: 35px;
+}
+.header{
+  height: 600px;
+  max-height:600px;
+  min-height:600px;
+}
+.bodyOne{
+  height: 350px;
+  max-height:350px;
+  min-height:350px;
+  font-size: 25px;
+}
+.img{
+  height: 300px;
+  max-height:300px;
+  min-height:300px;
+}
+.bodyTwo{
+  height: 400px;
+  max-height:400px;
+  min-height:400px;
+  font-size: 24px;
+}
+.copyright{
+  height:20px;
+  max-height:20px;
+  min-height:20px;
+  font-size: 15px;
+}
 </style>
   </head>
   <body>
+    <div id="main" class="container-fluid">
+        <div class="row"></div>
+            <div class="col-md-3 randomColor nav">Home</div>
+            <div class="col-md-3 randomColor nav">Cars</div>
+            <div class="col-md-3 randomColor nav">About Us</div>
+              <div class="col-md-3 randomColor nav">Contact</div>
 
+              <div class="row"></div>
+              <div class="col-md-12 randomColor header">
+              <img src="carbackground.jpg" height="100%" width="100%"/></div>
+
+              <div class="row"></div>
+              <div class="col-md-12 randomColor bodyOne">
+                <p>Welcome to Larry the Leaser's official website.
+                We currently have the newest Honda hatchback ready in the back of our shop.
+                We're recently getting new models that have been as old as from the 1970s!
+                We work with each car to get it into top shape!</p>
+              <p>
+                This wireframe will work because the navigation bar is immediately
+                at the top for the user to get the information they need. It is also located at the bottom
+                so that there's no need for the user to scroll all the way back up,
+                or the user need to cfind the "Back to Top" icon (because this needs to match all users and some
+                people do not know how to navigate a website very well)
+              </p></div>
+              <div class="row"></div>
+              <div class="col-md-4 randomColor img">
+                <img src="honda.jpg" height="300px" width="100%"/>
+              </div>
+                <div class="col-md-4 randomColor img"></div>
+                  <div class="col-md-4 randomColor img">
+<img src="redcar.jpg" height="300px" width="100%" />
+                  </div>
+
+                  <div class="row"></div>
+                  <div class="col-md-12 randomColor bodyTwo">
+                    <p>To add on,
+                  this wireframe works because it looks up to date. Many car
+                dealerships and car companies themselves have this sort of
+              wireframe website, and so somewhat following their ideas can help
+            non-users navigate the page better because it's more consistent.</p></div>
+</div>
+  <footer>
+  <div class="row"></div>
+        <div class="col-md-3 randomColor nav">Home</div>
+        <div class="col-md-3 randomColor nav">Cars</div>
+        <div class="col-md-3 randomColor nav">About Us</div>
+          <div class="col-md-3 randomColor nav">Contact</div>
+  <img src="wireframe.jpg" height="200px" width="150px"/>
+</footer>
+<div class="row"></div>
+<div class="col-md-12 randomColor copyright"><p>
+Copyright   Larry the Leaser 2017
+</p></div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+function getRandomNumber(min, max) {           
+return Math.floor(Math.random() * max + min);       
+        }
+$(document).ready(function() {
+var bodyColumns = $(".randomColor");
+bodyColumns.each(function() {
+$(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+})
+ $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+})
+    </script>
   </body>
 </html>
