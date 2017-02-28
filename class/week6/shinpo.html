@@ -18,99 +18,195 @@
     <![endif]-->
 <style media="screen">
 /*NAV BAR*/
-    .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
+.header{
+color: white;
+  text-align: right;
+  font-size: 60px;
+  background-image: url('vancouver.jpg');
+  height: 165px;
 }
-/*
-.dropdown {
-    position: relative;
-    display: inline-block;
-}*/
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {background-color: #f1f1f1}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-#nav {
-  list-style: none;
-  font-weight: bold;
-  margin-bottom: 10px;
-  width: 100%;
+.navBar{
+color: #ADD8E6;
   text-align: center;
-
+  font-size: 30px;
+  padding-left: 0;
 }
-#nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
+.navBar a{
+  color:#ADD8E6;
+  padding-left: 0;
 }
-#nav li {
-  margin: 0px;
-  display:
-}
-#nav li a {
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #000000;
-  float: left
+.navBar a:hover{
+  color: black;
 }
 /*NAV BAR ENDS*/
+
+.space{
+  height:50px;
+  min-height: 50px;
+  max-height: 50px;
+}
+.subTopics{
+  height:50px;
+  min-height: 50px;
+  max-height: 50px;
+
+  color: white;
+}
+.subNav{
+  height:100px;
+  min-height: 100px;
+  max-height: 100px;
+  background-color: black;
+  color: white;
+}
+
+body{
+  background-color: #696969;
+}
+.single{
+  height:50px;
+  min-height: 50px;
+  max-height: 50px;
+  font-size: 40px;
+  color: white;
+  text-align: left;
+}
+
+.map{
+  text-align: left;;
+  font-size: 30px;
+  color: white;
+}
+
+.link{
+  color:#ADD8E6;
+  font-size: 24px;
+}
+.para{
+  font-size: 24px;
+}
+.paraTwo{
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.footer{
+  font-size: 15px;
+}
 </style>
   </head>
   <body>
-    <nav>
-      <div class="dropdown">
-    <button class="dropbtn"> About Us</button>
-      <div class="dropdown-content">
-        <a href="#">Vancouver Shinpo</a>
-        <a href="#">Policy</a>
-        <a href="#">Careers</a>
-      </div> </div>
+    <div id="main" class="container-fluid">
+      <div class="row"><div class="col-md-12 header">バンクーバー新報 Vancouver Shinpo Japanese Weekly Newspaper</div></div>
 
-    <button class="dropbtn">Contact</button>
-    <button class="dropbtn">Location Map</button>
-    <div class="dropdown">
-    <button class="dropbtn">Membership</button>
-      <div class="dropdown-content">
-        <a href="#">About Membership</a>
-        <a href="#">Application Form</a>
-      </div></div>
+<div class="row"><div class="col-md-12 space"></div></div>
+      <div class="row"><div class="col-md-2 navBar">
+        <a href="#">Home</a></div>
+          <div class="row"><div class="col-md-2 navBar">
+            <a href="#">News</a></div>
+          <div class="row"><div class="col-md-2 navBar">
+            <a href="#">Interviews</a></div>
+          <div class="row"><div class="col-md-2 navBar">
+            <a href="#">Movies</a></div>
+                <div class="row"><div class="col-md-2 navBar">
+                  <a href="#">Events</a></div>
+                <div class="row"><div class="col-md-2 navBar">
+                  <a href="#">Columns</a></div>
+</div></div></div></div></div></div></div>
+<div class="row"><div class="col-md-12 navBar"></div>
+</div>
 
-      <div class="dropdown">
-    <button class="dropbtn"> About Us</button>
-      <div class="dropdown-content">
-        <a href="#">Vancouver Shinpo</a>
-        <a href="#">Policy</a>
-        <a href="#">Careers</a>
-      </div> </div>
-  </nav>
+  <div class="row"><div class="col-md-12 space"></div></div>
+
+<div class="row">
+
+  <div class="col-md-2">
+      <div class="col-md-12 single">About us</div>
+
+      <div class="row"></div>
+      <div class="col-md-12 subNav"><a href="#">About us</a></div>
+    <div class="row"></div>
+    <div class="col-md-12 subNav"><a href="#">Vancouver Shinpo</a></div>
+    <div class="row"></div>
+    <div class="col-md-12 subNav"><a href="#">Policy</a></div>
+    <div class="row"></div>
+    <div class="col-md-12 subNav"><a href="#">Careers</a></div></div>
+
+    <div class="col-md-10">
+  <div class="col-md-12 content"></div>
+<a href="#" class="link">About us</a>
+  <p class="para">バンクーバー新報は1978年に創業され、バンクーバーに住む日系人のための新聞として情報を提供して来ました。
+バンクーバー新報は世界、カナダ、日本のニュースを皆様にお伝えすると共に、毎週50件以上の求人情報を掲載しています。仕事を探している移民の方達、ワーキングホリデーの方達は必見です。その他、バンクーバーでの生活に役立つ情報が満載です。
+日本から留学、ワーキングホリデーなどで来加される皆さん、本紙には約300件の告地板情報（ホームステイ、ルームメイト、売り、サークルメンバー募集など）があります。
+バンクーバーに到着されたら、まずは日系の食料品店、書店などでバンクーバー新報を入手して、現地の情報に目を通 して下さい。</p>
+<a href="#" class="link">Vancouver Shinpo</a>
+<p class="para">Vancouver Shinpo is a weekly Japanese newspaper that has been in publication since 1978, and is the oldest running Japanese community newspaper in Canada.
+Our readers are almost all Japanese speakers in western Canada such as visitors, students, and immigrants.
+Our paper covers Canadian, Japanese, International and local community news.
+It would be our great pleasure to assist you in placing an ad on our newspaper. Our newspaper is published every Thursday, and our advertising deadline is every Monday at noon.
+Please consider this matter and kindly contact us for further inquiries at your earliest convenience.</p>
+<a href="#" class="link">Careers</a>
+<p class="para">この画面でPDFが表示されない場合には、こちらをクリックしてください。
+スマートフォン、タブレットの方は、こちらをクリックしてください。
+※PDFファイルをご覧頂く際にはAdobe Acrobat Readerをダウンロードしてください。</p></div>
+</div>
+
+  <div class="row"><div class="col-md-12 space"></div></div>
+  <div class="row"><div class="col-md-12 single">Contact</div></div>
+  <div class="row"><div class=" col-md-12 para">
+    <p class="para"><a href="cell.png"><img src="cell.png" width="90px" height=" 90px"/></a> (604)-684-5868</p>
+    <p class="para"><a href="cell.png"><img src="email.png" width="90px" height=" 90px"/></a>Email: info@vshinpo.com </p>
+    <p class="paraTwo"><a href="https://www.facebook.com/vshinpo/" target="_blank"><img src="fb.png" width="60px" height="60px"/></a></p>
+    <p class="paraTwo"><a href="https://twitter.com/vanshinpo?lang=ja" target="_blank"><img src="twitter.png" width="60px" height="60px"></a></p>
+  </div></div>
+
+  <div class="row"><div class="col-md-12 space"></div></div>
+  <div class="row"><div class="col-md-12 map">Location Map</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.3307816284732!2d-123.04700778480321!3d49.251175980924316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676b7f9ed9d8d%3A0x485d64ae9cabf50!2s3735+Renfrew+St%2C+Vancouver%2C+BC+V5M+3L7!5e0!3m2!1sen!2sca!4v1488099986358" width="80%" height="700px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+  <div class="row"><div class="col-md-12 space"></div></div>
+
+  <div class="row">
+<div class="col-md-2">
+      <div class="col-md-12 single">Membership</div>
+      <div class="row"></div>
+      <div class="col-md-12 subNav"><a href="#">About Membership</a></div>
+      <div class="row"></div>
+      <div class="col-md-12 subNav"><a href="#">Application Form</a></div></div>
+
+      <div class="col-md-10">
+    <div class="col-md-12 content"></div>
+  <a href="#" class="link">Membership</a><p class="para">この画面でPDFが表示されない場合には、こちらをクリックしてください。
+スマートフォン、タブレットの方は、こちらをクリックしてください。
+※PDFファイルをご覧頂く際にはAdobe Acrobat Readerをダウンロードしてください。</p></div>
+</div>
+
+<div class="row"><div class="col-md-12 space"></div></div>
+
+<div class="row"><div class="col-md-12 single">Vancouver Information</div></div>
+<div class="row"><div class=" col-md-12 para">
+  <p class="para"><img src="febNews.png" align="right"/>
+    <p class="para"><img src="donuts.jpg" width="400px" height="343px" align="left"/>
+  あなたにぴったりの学校がきっと見つかる！ School Information…V-5
+心を一つにする歌、神輿甚句（みこしどっこい）…V-3
+気持ち英会話…V-4
+外から見る日本語…V-5
+カナダの高校生が『カケハシ・プロジェクト』で訪日…V-13
+新朝日チーム、岡井総領事を表敬訪問…V-13
+＄５クッキング…V-14
+老婆のひとりごと</p></p></div></div>
+
+<hr />
+<div class="row"><div class="col-md-12 single"></div></div>
+<div class="row"><div class=" col-md-12 footer"><p>Copyright © 2017 Vancouver Shinpo. All Rights Reserved.</p></div></div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEZb1b5zN-uTpkXzV8uYb5le1douFY5kI &callback=initMap">
+</script>
+
   </body>
 </html>
