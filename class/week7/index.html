@@ -18,7 +18,47 @@
     <![endif]-->
   </head>
   <body>
+Hello world!
+<div id="myDiv">Looking at some text</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+<script>
+//Making a popup appear when getting on the site
+//alert("This is a popup");
+console.log("This is for debugging messages");
+var mvar;
+//in quotes is a string
+//The next two describe a
+var myAnotherVar = "Here is my another var";
+alert(myAnotherVar);
+// this doesn't work until the user clicks 'ok' on screen. Then, on the 'inspect source' will it show
+console.log(myAnotherVar);
+//concatenation--> series/ chain
+//another popup that will occur after 'Her is my another var'
+var myLastName= "Cheung";
+var myFirstName="Colleen";
+alert("My first name is "+myFirstName + " and my last name is "+myLastName);
+//{} is a code block and anything inside will be executed
+
+/*function sayMyName(){
+  console.log("Your name is "+myName);
+}
+//this will call the function
+sayMyName();
+function sayMyName2(name){
+  console.log("Your name is "+name);
+}
+sayMyName2("Colleen");
+sayMyName2("Amy");
+//When doc is ready, have jQuery get the element with id="myDiv" and call the html function
+//html function will replace the html within the element*/
+
+$(document).ready(function(){
+alert("the document is ready");
+$("#myDiv").html("Hey, the DOM can be changed");
+$("#myDiv").append ("<br >Add something");
+});
+</script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
