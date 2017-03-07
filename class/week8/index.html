@@ -16,52 +16,143 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <style media="screen">
+      #leftDiv{
+        text-align: left;
+      }
+      #centerDiv{
+        text-align: center;
+      }
+      #rightDiv{
+        text-align: right;
+      }
+      </style>
   </head>
   <body>
-  Hello world!
-  <div id="myDiv">Looking at some text</div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div class="container">
+      <div class="row">
+        <div id="carDiv" class="col-md-12"></div>
+      </div>
+    </div>
 
-  <script>
-  //Making a popup appear when getting on the site
-  //alert("This is a popup");
-  console.log("This is for debugging messages");
-  var mvar;
-  //in quotes is a string
-  //The next two describe a
-  var myAnotherVar = "Here is my another var";
-  alert(myAnotherVar);
-  // this doesn't work until the user clicks 'ok' on screen. Then, on the 'inspect source' will it show
-  console.log(myAnotherVar);
-  //concatenation--> series/ chain
-  //another popup that will occur after 'Her is my another var'
-  var myLastName= "Cheung";
-  var myFirstName="Colleen";
-  alert("My first name is "+myFirstName + " and my last name is "+myLastName);
-  //{} is a code block and anything inside will be executed
+    <div class="container">
+      <div class="row">
+        <div id="horseDiv" class="col-md-12"></div>
+      </div>
+    </div>
 
-  function sayMyName(){
-    console.log("Your name is "+myName);
-  }
-  //this will call the function
-  sayMyName();
-  function sayMyName2(name){
-    console.log("Your name is "+name);
-  }
-  sayMyName2("Colleen");
-  sayMyName2("Amy");
-  //When doc is ready, have jQuery get the element with id="myDiv" and call the html function
-  //html function will replace the html within the element
-
-  $(document).ready(function(){
-  alert("the document is ready");
-  $("#myDiv").html("Hey, the DOM can be changed");
-  $("#myDiv").append ("<br >Add something");
-  });
+    <div class="container">
+      <div class="row">
+        <div id="chipmunkDiv" class="col-md-12"></div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+//The three primitive types
+
+var myString= "a string";
+var myNumber= 2;
+//this is a string variable because there's quotations
+var myVar= "2";
+var myBoolean=false;
+var myVar2="true";
+//calculations would be done with numbers and variables
+//an array is done with square brackets
+var myArray = [];
+var myFullArray = ["Calen","Nicole","Evan"];
+console.log(myFullArray[0]);
+console.log("myFullArray 2nd value = "+myFullArray[1]);
+
+var myMixArray = [3, "David",false];
+myMixArray.push("another value");
+console.log("myMixArray values: "+myMixArray);
+
+//if you want to know the property of a car, you want to know the TYPE, PRICE, MILEAGE, COLOUR, FUEL and its type, SOURCE
+var car = {
+  type : "SUV",
+  price : "45,000",
+  mileage : 24,
+  color : "magenta",
+  fuelType : "electric",
+  src : "car1.jpg",
+  message : function(){
+    console.log("A car is useful!");
+  }
+}
+var horse = {
+  type : "horse",
+  gender : "unknown",
+  color : "black",
+  home : "home",
+  src : "stallion.jpg",
+  message : function(){
+    console.log("A horse on a farm");
+  }
+}
+  var chipmunk = {
+    type : "chipmunk",
+    gender : "unknown",
+    color : "brown",
+    home : "wild",
+    src : "chipmunk.jpg",
+    message : function(){
+      console.log("A chipmunk in the wild");
+    }
+};
+//do object name.property
+console.log(car.type);
+console.log(car.price);
+console.log(car.message());
+
+console.log(horse.type);
+console.log(horse.gender);
+console.log(horse.message());
+
+console.log(chipmunk.type);
+console.log(chipmunk.gender);
+console.log(chipmunk.message());
+
+$(document).ready(function(){
+
+  $("#carDiv").html("<div id='centerDiv'>")
+  $("#carDiv").html("<div>"+car.type+"</div>");
+  $("#carDiv").append("<img src='"+car.src+"'/>");
+  $("#carDiv").append("<div>"+car.price +"</div>");
+  $("#carDiv").append("</div>");
+
+var myHtml= "<div id='leftDiv'>" +
+"<div>"+car.type+"</div>" +
+"<img src='"+car.src+"'/>" +
+"<div>"+car.price +"</div>" +
+"</div>";
+$("#carDiv").html(myHtml);
+
+var myHtml= "<div id='centerDiv'>" +
+"<div>"+horse.type+"</div>" +
+"<img src='"+horse.src+"'/>" +
+"<div>"+horse.gender +"</div>" +
+"</div>";
+$("#horseDiv").html(myHtml);
+
+var myHtml= "<div id='rightDiv'>" +
+"<div>"+chipmunk.type+"</div>" +
+"<img src='"+chipmunk.src+"'/>" +
+"<div>"+chipmunk.gender +"</div>" +
+"</div>";
+
+$("#chipmunkDiv").html(myHtml);
+
+
+});
+
+//2 objects, minimum 4 properties, at least 1 img write to own row
+
+
+
+    </script>
   </body>
 </html>
