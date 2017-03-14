@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 9</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <style media="screen">
+
+  </style>
+  <body>
+<div class="info">Customer Name; Colleen</div>
+<div class="info">Credit Card ****1234</div>
+<div class="info">Expiry 08/17</div>
+<div class="info">Price</div>
+<div class="info">Address</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+//task 1
+var num1=5;
+var num2=7;
+var num3=23;
+var num4=78;
+var num5=9.1;
+var total= num1+num2+num3+num4+num5;
+alert("the total is"+total);
+
+/*
+//task2
+for(var i=0; i <= 10; i = i+1){
+  //it will execute the code inside the curly brackets until the end condition is met
+  //ALWAYS BE CAREFUL AND NEVER HAVE A NUMBER INFINITE OR IN NEGATIVE NUMBER--> IT'LL CRASH THE PC
+console.log("The value of i is"+i);
+//look at F12 on Console
+}*/
+
+/*
+//Task 3--> adding numbers
+var myArray =[34,878,4,489,90,545,88,34,67,33];
+// myArray[2]; 4 BECAUSE IT STARTS AT 0
+$(document).ready(function(){
+  for(var i=0; i < myArray.length; i = i+1){
+  var myMessage= "The value in myArray at spot"+i+"is"+myArray[i];
+  console.log(myMessage);
+  $("body").append(myMessage+ "<br />")
+  }
+})*/
+/*
+//Task 4-->multiplying numbers
+var myArray =[34,878,4,489,90,545,88,34,67,33];
+$(document).ready(function(){
+  var product=myArray[0];
+  for(var i=1; i < myArray.length; i = i+1){
+    product= product*myArray[i];
+  }
+  $("body").append("<div>The product is"+product+"</div>");
+*/
+//Task 5
+//AN OBJECT IS NOT AN ARRAY SO NEVER USE ARRAY PROPERTIES LIKE 'LENGTH'
+$(document).ready(function(){
+/*
+  var car = {
+    type : "SUV",
+    price : "45,000",
+    mileage : "24",
+    color : "magenta",
+    fuelType : "electric",
+    src : "car1.jpg",
+  }
+  //how to loop through propertties of an object
+  for (var key in car){ //for every key in car
+    //execute this code
+  $("body").append("<div>Key name is "+key+ " and value is "+car[key]+"</div>");
+  }
+*/
+
+//var infoDivs=$(".info");
+$(".info").each(function(){
+  //use the 'this' keyword to refer to the urrent one in the loop
+console.log("The text of this div is " +$(this).text());
+})
+});
+    </script>
+  </body>
+</html>
